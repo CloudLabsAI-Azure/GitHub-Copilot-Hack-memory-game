@@ -3,7 +3,7 @@ window.onload = function () {
     const winMessage = document.createElement('div');
     winMessage.id = 'win-message';
     winMessage.innerText = 'You Win!';
-    document.body.appendChild(winMessage); // Append win message to the body
+    document.body.appendChild(winMessage); 
     const cards = [];
 
     fetch('/get-symbols')
@@ -24,7 +24,7 @@ window.onload = function () {
 
         const img = document.createElement('img');
         img.src = symbol.image;
-        img.classList.add('card-image'); // Add a class for styling purposes
+        img.classList.add('card-image'); 
         card.appendChild(img);
 
         card.addEventListener('click', flipCard);
@@ -57,7 +57,6 @@ window.onload = function () {
         checkWin();
     }
 
-    // Function to check if all cards are matched
     function checkWin() {
     // Check if all cards are matched
     }
