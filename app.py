@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 # Route for the main game page
 
-# Route to fetch symbols from the Star Wars API
 @app.route('/get-symbols')
 def get_symbols():
     url = 'https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/all.json'
