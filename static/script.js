@@ -9,7 +9,7 @@ window.onload = function () {
     fetch('/get-symbols')
         .then(response => response.json())
         .then(symbols => {
-        // Create two cards for each symbol
+        // Create two cards for each symbol (Objective 1)
 
             shuffle(cards);
             cards.forEach(card => {
@@ -33,7 +33,7 @@ window.onload = function () {
     }
 
     function shuffle(array) {
-    // Shuffle the array using the Fisher-Yates algorithm
+    // Shuffle the array using the Fisher-Yates algorithm (Objective 2)
     }
 
     let flippedCards = [];
@@ -51,14 +51,14 @@ window.onload = function () {
     function checkMatch() {
         const [card1, card2] = flippedCards;
 
-        // Check if the two flipped cards have the same symbol
+        // Check if the two flipped cards have the same symbol (Objective 3)
 
         flippedCards = [];
         checkWin();
     }
 
     function checkWin() {
-    // Check if all cards are matched
+    // Check if all cards are matched (Objective 4)
     }
 };
 
