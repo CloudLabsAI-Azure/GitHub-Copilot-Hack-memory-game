@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-# Route for the main game page
+# Route for the main game page (Objective 5)
 
 @app.route('/get-symbols')
 def get_symbols():
