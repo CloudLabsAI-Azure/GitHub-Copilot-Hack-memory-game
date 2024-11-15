@@ -4,15 +4,12 @@ using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Serve static files from the wwwroot folder
 app.UseStaticFiles();
 
-// Configure the app to return index.html when the root URL is accessed
-app.MapFallbackToFile("index.html");
+// Configure the app to return index.html when the root URL is accessed (Objective 5)
 
 app.Run();
