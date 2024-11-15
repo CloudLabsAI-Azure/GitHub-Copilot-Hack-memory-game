@@ -9,7 +9,8 @@ window.onload = function () {
     fetch('https://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/all.json')
         .then(response => response.json())
         .then(symbols => {
-            // Create two cards for each symbol (Objective 1)
+            /* JavaScript code snippet that loops through the first 8 elements of the symbols array, and for each symbol, 
+            adds two cards to the cards array using the createCard(symbol) function (Objective 1) */
 
             shuffle(cards);
             cards.forEach(card => {
