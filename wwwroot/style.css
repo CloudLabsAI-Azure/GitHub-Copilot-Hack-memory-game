@@ -1,7 +1,7 @@
 /* Basic page styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,7 +9,7 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    color: #333;
+    color: #a602d8;
 }
 
 /* Game board container */
@@ -30,7 +30,7 @@ body {
 .card {
     width: 150px;
     height: 150px;
-    background-color: #111111;
+    background-color: #272727;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ body {
     transition: transform 0.3s ease, opacity 0.3s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 7px rgb(170, 5, 235);
 }
 
 /* Card image styling */
